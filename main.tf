@@ -152,7 +152,7 @@ resource "aws_instance" "hashicat" {
   }
 }
 
-resource "null_resource" "configure_cat_app" {
+resource "null_resource" "configure-cat-app" {
   count      = var.ec2_count
   depends_on = [aws_eip_association.hashicat]
 
